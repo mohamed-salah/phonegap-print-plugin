@@ -28,7 +28,7 @@
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.plugins.PrintDialogActivity">
-        </activity>
+      </activity>
     </config-file>
 
     <config-file target="res/values/strings.xml" parent="/resources">
@@ -40,5 +40,17 @@
     <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/plugins/" />
     <source-file src="src/android/print_dialog.xml" target-dir="res/layout/" />
   </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+   <config-file target="config.xml" parent="/*">
+     <feature name="PrintPlugin">
+       <param name="ios-package" value="PrintPlugin" />
+     </feature>
+   </config-file>
+
+   <header-file src="src/ios/PrintPlugin.h" />
+   <source-file src="src/ios/PrintPlugin.m" />
+ </platform>
 
 </plugin>
