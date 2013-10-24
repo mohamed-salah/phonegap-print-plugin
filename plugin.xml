@@ -31,6 +31,11 @@
         </activity>
     </config-file>
 
+    <config-file target="res/values/strings.xml" parent="/resources/">
+      <string name="title_activity_print_dialog">PrintDialogActivity</string>
+    </config-file>
+
+
     <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/plugins/" />
     <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/plugins/" />
     <source-file src="src/android/print_dialog.xml" target-dir="res/layout/" />
