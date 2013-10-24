@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.phonegap.plugins"
+  version="0.1.0">
+  <name>PrintPlugin</name>
+  <description>Cordova Print Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,PrintPlugin</keywords>
+
+
+  <js-module src="www/PrintPlugin.js" name="PrintPlugin">
+    <clobbers target="window.PrintPlugin" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="PrintPlugin">
+        <param name="android-package" value="com.phonegap.plugins.PrintPlugin"/>
+      </feature>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+
+    <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/plugins/" />
+  </platform>
+
+</plugin>
