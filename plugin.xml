@@ -24,6 +24,9 @@
     <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
       <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.plugins.PrintDialogActivity">
         </activity>
     </config-file>
