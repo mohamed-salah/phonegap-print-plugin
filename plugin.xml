@@ -24,9 +24,13 @@
     <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
       <uses-permission android:name="android.permission.INTERNET" />
+      <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.plugins.PrintDialogActivity">
+        </activity>
     </config-file>
 
     <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/plugins/" />
+    <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/plugins/" />
+    <source-file src="src/android/print_dialog.xml" target-dir="res/layout/" />
   </platform>
 
 </plugin>
