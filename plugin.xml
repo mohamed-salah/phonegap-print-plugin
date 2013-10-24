@@ -31,7 +31,7 @@
         </activity>
     </config-file>
 
-    <config-file target="res/values/strings.xml" parent="/resources/">
+    <config-file target="res/values/strings.xml" parent="/resources">
       <string name="title_activity_print_dialog">PrintDialogActivity</string>
     </config-file>
 
