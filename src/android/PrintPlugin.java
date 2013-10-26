@@ -1,4 +1,4 @@
-package com.phonegap.plugins;
+package com.phonegap.PrintPlugin;
 
 import java.io.File;
 import org.apache.cordova.CallbackContext;

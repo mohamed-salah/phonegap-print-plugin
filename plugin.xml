@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.phonegap.plugins"
+  id="com.phonegap.PrintPlugin"
   version="0.1.0">
   <name>PrintPlugin</name>
   <description>Cordova Print Plugin</description>
@@ -18,7 +18,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="PrintPlugin">
-        <param name="android-package" value="com.phonegap.plugins.PrintPlugin"/>
+        <param name="android-package" value="com.phonegap.PrintPlugin.PrintPlugin"/>
       </feature>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/*">
@@ -27,7 +27,7 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.plugins.PrintDialogActivity">
+      <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.PrintPlugin.PrintDialogActivity">
       </activity>
     </config-file>
 
@@ -36,8 +36,8 @@
     </config-file>
 
 
-    <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/plugins/" />
-    <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/plugins/" />
+    <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/PrintPlugin/" />
+    <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/PrintPlugin/" />
     <source-file src="src/android/print_dialog.xml" target-dir="res/layout/" />
   </platform>
 

@@ -1,4 +1,4 @@
-package com.phonegap.plugins;
+package com.phonegap.PrintPlugin;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
