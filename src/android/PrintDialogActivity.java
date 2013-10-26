@@ -15,9 +15,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.example.myApp.R;
-import com.example.myApp.R.id;
-import com.example.myApp.R.layout;
+import com.badrit.wapp.R;
 
 public class PrintDialogActivity extends Activity {
   private static final String PRINT_DIALOG_URL = "https://www.google.com/cloudprint/dialog.html";
