@@ -1,7 +1,7 @@
 PrintPlugin_GoogleCloud plugin for Cordova / PhoneGap
 ======================================================
 
-This Plugin is inspired from [phonegap-print-plugins](https://github.com/EionRobb/phonegap-print-plugins) plugin
+This Plugin is inspired from [phonegap-print-plugins](https://github.com/collinforrester/PhonegapPrintPlugin) plugin and 
 
 This Plugin brings up a native iOS overlay to print document, this plugin is using [AirPrint](http://en.wikipedia.org/wiki/AirPrint) for iOS and [Google Cloud Print](http://www.google.com/landing/cloudprint/) for android
 
@@ -10,19 +10,11 @@ This Plugin brings up a native iOS overlay to print document, this plugin is usi
 Example Usage: 
 
 ```js
-<code>
-var filePath = "YOUR FILE PATH";
-//remove /sdcard from file path in case of android
-var uri = filePath.substring(filePath.indexOf('/sdcard'), filePath.length);
 var type = "text/html"
 var title = "test.html";
 var fileContent = "<html>Phonegap Print Plugin</html>";
-//print fileContent incase of Android(becasue Google Cloud Print could't identify local paths) and uri incase of iOS
-window.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},uri,type,title);
-<code>
+window.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},"",type,title);
 ```
-
-## Requirements
 
 This has been successfully tested on Cordova 3.0 to 3.1.
 
