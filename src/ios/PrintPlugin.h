@@ -14,13 +14,13 @@
 
 
 @interface PrintPlugin : CDVPlugin {
-    NSString* successCallback;
-    NSString* failCallback;
-    NSString* printHTML;
+	NSString* successCallback;
+	NSString* failCallback;
+	NSString* printHTML;
 
     //Options
-    NSInteger dialogLeftPos;
-    NSInteger dialogTopPos;
+	NSInteger dialogLeftPos;
+	NSInteger dialogTopPos;
 }
 
 @property (nonatomic, copy) NSString* successCallback;
