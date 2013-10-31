@@ -14,33 +14,6 @@
     <clobbers target="window.PrintPlugin" />
   </js-module>
 
-  <!-- android -->
-  <platform name="android">
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="PrintPlugin">
-        <param name="android-package" value="com.phonegap.PrintPlugin.PrintPlugin"/>
-      </feature>
-    </config-file>
-    <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-      <uses-permission android:name="android.permission.INTERNET" />
-    </config-file>
-
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:label="@string/title_activity_print_dialog" android:name="com.phonegap.PrintPlugin.PrintDialogActivity">
-      </activity>
-    </config-file>
-
-    <config-file target="res/values/strings.xml" parent="/resources">
-      <string name="title_activity_print_dialog">PrintDialogActivity</string>
-    </config-file>
-
-
-    <source-file src="src/android/PrintPlugin.java" target-dir="src/com/phonegap/PrintPlugin/" />
-    <source-file src="src/android/PrintDialogActivity.java" target-dir="src/com/phonegap/PrintPlugin/" />
-    <source-file src="src/android/print_dialog.xml" target-dir="res/layout/" />
-  </platform>
-
   <!-- ios -->
   <platform name="ios">
    <config-file target="config.xml" parent="/*">
