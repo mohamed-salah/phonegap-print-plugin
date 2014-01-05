@@ -10,7 +10,7 @@ This Plugin brings up a native iOS overlay to print document, this plugin is usi
 Example Usage: 
 
 ```js
-var type = "text/html"
+var type = "text/html";
 var title = "test.html";
 var fileContent = "<html>Phonegap Print Plugin</html>";
 window.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},"",type,title);
