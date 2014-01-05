@@ -8,6 +8,7 @@ This Plugin brings up a native iOS overlay to print document, this plugin is usi
 ## Prerequisites
 ```js
 phonegap local plugin add org.apache.cordova.device
+phonegap local plugin add org.apache.cordova.inappbrowser
 ```
 
 
