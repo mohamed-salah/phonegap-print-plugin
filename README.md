@@ -1,4 +1,4 @@
-PrintPlugin_GoogleCloud plugin for Cordova / PhoneGap
+Print plugin for Cordova / PhoneGap
 ======================================================
 
 This Plugin is inspired from [phonegap-print-plugins](https://github.com/collinforrester/PhonegapPrintPlugin) plugin and 
