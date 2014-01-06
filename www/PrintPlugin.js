@@ -3,7 +3,7 @@
  */
 var PrintPlugin = function(){};
 
-PrintPlugin.prototype.PrintPlugin = function(printHTML, successCallback, errorCallback, uri, type, title) {
+PrintPlugin.prototype.print = function(printHTML, successCallback, errorCallback, uri, type, title) {
 	if (device.platform == "Android") {
 
 		printHTML = printHTML.replace(/(\r\n|\n|\r)/gm,"");
