@@ -1,6 +1,9 @@
-var PrintPlugin = {
+/**
+ * @constructor
+ */
+var PrintPlugin = function(){};
 
-	print: function(printHTML, successCallback, errorCallback, uri, type, title) {
+	PrintPlugin.prototype.PrintPlugin = function(printHTML, successCallback, errorCallback, uri, type, title) {
 		if (device.platform == "Android") {
 
 			printHTML = printHTML.replace(/(\r\n|\n|\r)/gm,"");
@@ -25,9 +28,19 @@ var PrintPlugin = {
 			cordova.exec(successCallback, errorCallback, 'PrintPlugin', 'print', [printHTML]);
 		}
 	},
-	isPrintingAvailable: function(successCallback, errorCallback){
+	PrintPlugin.prototype.isPrintingAvailable = function(successCallback, errorCallback){
 		cordova.exec(successCallback, errorCallback, 'PrintPlugin', 'isPrintingAvailable', []);
 	}
 };
 
-module.exports = PrintPlugin;
+// Plug in to Cordova
+cordova.addConstructor(function() {
+
+    if (!window.Cordova) {
+        window.Cordova = cordova;
+    };
+
+
+    if(!window.plugins) window.plugins = {};
+    window.plugins.PrintPlugin = new PrintPlugin();
+});
