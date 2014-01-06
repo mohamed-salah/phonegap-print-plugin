@@ -20,7 +20,7 @@ Example Usage:
 var type = "text/html";
 var title = "test.html";
 var fileContent = "<html>Phonegap Print Plugin</html>";
-window.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},"",type,title);
+window.plugins.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},"",type,title);
 ```
 
 This has been successfully tested on Cordova 3.0 to 3.1.
