@@ -5,13 +5,6 @@ This Plugin is inspired from [phonegap-print-plugins](https://github.com/collinf
 
 This Plugin brings up a native iOS overlay to print document, this plugin is using [AirPrint](http://en.wikipedia.org/wiki/AirPrint) for iOS and [Google Cloud Print](http://www.google.com/landing/cloudprint/) for android
 
-## Prerequisites
-```js
-phonegap local plugin add org.apache.cordova.device
-phonegap local plugin add org.apache.cordova.inappbrowser
-```
-
-
 ## Usage
 
 Example Usage: 
