@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.phonegap.PrintPlugin"
+  id="com.badrit.PrintPlugin"
   version="0.1.0">
   <name>PrintPlugin</name>
   <description>Cordova Print Plugin</description>
@@ -11,6 +11,8 @@
   <dependency id="org.apache.cordova.device" url="https://github.com/apache/cordova-plugin-device.git" />
   <dependency id="org.apache.cordova.inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 
+  <dependency id="org.apache.cordova.device" url="https://github.com/apache/cordova-plugin-device.git" />
+  <dependency id="org.apache.cordova.inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 
   <js-module src="www/PrintPlugin.js" name="PrintPlugin">
     <clobbers target="window.PrintPlugin" />
