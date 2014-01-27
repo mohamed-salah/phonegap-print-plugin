@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0-alpha.2.css"/>
+	<link rel="stylesheet" href="css/jquery.mobile.iscrollview.css"/>
+
+	<script type="text/javascript" src="cordova.js"></script>
+
+	<!-- The Scripts -->
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+
+	<script src="js/libs/jquery.mobile-1.4.0-alpha.2.js"></script>
+	<script type="text/javascript">
+	document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady() {
+		$('.print').click(function() {
+			var type = "text/html";
+			var title = "test.html";
+			var fileContent = "<html>Phonegap Print Plugin</html>";
+			window.plugins.PrintPlugin.print(fileContent, function() {
+				console.log('success')
+			}, function() {
+				console.log('fail')
+			}, "", type, title);
+		});
+	}
+	</script>
+</head>
+
+<body>
+
+	<div data-role='header' data-position='fixed' data-theme = 'b'>
+		<h1>header</h1>
+	</div>
+	<div data-iscroll=""  data-role = 'content'>
+		<h1>content</h1>
+		<a class="print" data-role="button">Print</a>
+	</div>
+
+	<div data-role = 'footer' data-position = 'fixed' data-theme = 'b'>
+		<h1>footer</h1>
+	</div>
+	
+</body>
+
+</html>
