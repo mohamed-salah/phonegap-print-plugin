@@ -3,7 +3,8 @@ Print plugin for Cordova / PhoneGap
 
 This Plugin is inspired from [phonegap-print-plugins](https://github.com/collinforrester/PhonegapPrintPlugin) plugin and 
 
-This Plugin brings up a native overlay to print HTML document, this plugin is using [AirPrint](http://en.wikipedia.org/wiki/AirPrint) for iOS and [Google Cloud Print](http://www.google.com/landing/cloudprint/) for android
+This Plugin brings up a native overlay to print HTML document, this plugin is using [AirPrint](http://en.wikipedia.org/wiki/AirPrint) for iOS and [Google Cloud Print](http://www.google.com/landing/cloudprint/) for android,
+so this plugin is used only to print using GoogleCloud and AirPrint, other solutions may be used to print using network printer like [this](https://github.com/katzer/cordova-plugin-printer/tree/5ef59a69ed461eadd22a202d9218a72e9f0453ae).
 
 ## Usage
 
