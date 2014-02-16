@@ -16,6 +16,11 @@ var title = "test.html";
 var fileContent = "<html>Phonegap Print Plugin</html>";
 window.plugins.PrintPlugin.print(fileContent,function(){console.log('success')},function(){console.log('fail')},"",type,title);
 ```
+Note: you must escape quotes in the fileContent string 
+
+```js
+fileContent.replace(/"/g, '\'');
+```
 
 This has been successfully tested on Cordova 3.0 to 3.1.
 
