@@ -25,9 +25,9 @@
  - (void) isPrintingAvailable:(CDVInvokedUrlCommand*)command{
     NSUInteger argc = [command.arguments count];
     
-    if (argc < 1) {
-        return;
-    }
+//    if (argc < 0) {
+//        return;
+//    }
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:([self isPrintServiceAvailable] ? YES : NO)];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
