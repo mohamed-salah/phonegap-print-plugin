@@ -104,10 +104,21 @@
          If iPad, and if button offsets passed, then show dilalog 
          from offset
          */
-         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad &&
-            dialogTopPos != 0 && dialogLeftPos != 0) {
-            [controller presentFromRect:CGRectMake(self.dialogLeftPos, self.dialogTopPos, 0, 0) inView:self.webView animated:YES completionHandler:completionHandler];
-    } else {
+
+        if ([UIDevice currentDevice].userInterfaceIdiom  == UIUserInterfaceIdiomPad) {
+        
+            CGRect bounds = self.webView.bounds;         
+            self.dialogLeftPos = (bounds.size.width / 2) ;
+            self.self.dialogTopPos = (bounds.size.height/2);
+            
+            [controller presentFromRect:CGRectMake(self.dialogLeftPos,self.dialogTopPos, 0, 0) inView:self.webView animated:YES completionHandler:
+             ^(UIPrintInteractionController *ctrl, BOOL ok, NSError *e) {
+                 CDVPluginResult* pluginResult =
+                 [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+                 
+             }];
+        
+        } else {
         [controller presentAnimated:YES completionHandler:completionHandler];
     }
 }
