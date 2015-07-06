@@ -11,9 +11,6 @@
   <dependency id="org.apache.cordova.device" url="https://github.com/apache/cordova-plugin-device.git" />
   <dependency id="org.apache.cordova.inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 
-  <dependency id="org.apache.cordova.device" url="https://github.com/apache/cordova-plugin-device.git" />
-  <dependency id="org.apache.cordova.inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
-
   <js-module src="www/PrintPlugin.js" name="PrintPlugin">
     <clobbers target="window.PrintPlugin" />
   </js-module>
