@@ -8,7 +8,8 @@
   <description>Cordova Print Plugin</description>
   <license>Apache 2.0</license>
   <keywords>cordova,PrintPlugin</keywords>
-  <dependency id="org.apache.cordova.inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
+  <dependency id="cordova-plugin-device" url="https://github.com/apache/cordova-plugin-device.git" />
+  <dependency id="cordova-plugin-inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 
   <js-module src="www/PrintPlugin.js" name="PrintPlugin">
     <clobbers target="window.PrintPlugin" />
