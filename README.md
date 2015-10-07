@@ -22,6 +22,18 @@ Note: you must escape quotes in the fileContent string
 fileContent.replace(/"/g, '\'');
 ```
 
+## Installation 
+
+for Cordova >= 3.0.0
+
+phonegap local plugin add https://github.com/mohamed-salah/phonegap-print-plugin.git
+
+cordova plugin add https://github.com/mohamed-salah/phonegap-print-plugin.git
+
+for Cordova >= 5.0.0
+
+cordova plugin add com-badrit-PrintPlugin
+
 This has been successfully tested on Cordova 3.0 to 3.1.
 
 ## MIT Licence

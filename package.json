@@ -1,0 +1,24 @@
+{
+  "name": "com-badrit-PrintPlugin",
+  "version": "0.2.0",
+  "description": "Cordova Print Plugin",
+  "cordova": {
+    "id": "com-badrit-PrintPlugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamed-salah/phonegap-print-plugin"
+  },
+  "keywords": [
+    "cordova",
+    "print",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT"
+}
