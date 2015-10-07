@@ -1,9 +1,9 @@
 {
-  "name": "com-badrit-PrintPlugin",
+  "name": "com-badrit-printplugin",
   "version": "0.2.0",
   "description": "Cordova Print Plugin",
   "cordova": {
-    "id": "com-badrit-PrintPlugin",
+    "id": "com-badrit-printplugin",
     "platforms": [
       "android",
       "ios"

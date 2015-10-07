@@ -32,7 +32,7 @@ cordova plugin add https://github.com/mohamed-salah/phonegap-print-plugin.git
 
 for Cordova >= 5.0.0
 
-cordova plugin add com-badrit-PrintPlugin
+cordova plugin add com-badrit-printplugin
 
 This has been successfully tested on Cordova 3.0 to 3.1.
 
